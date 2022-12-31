@@ -1,0 +1,39 @@
+
+["Fuel Items"]
+	#Defines items that can use as fuel
+	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
+	Boiler = [["minecraft:coal", 37], ["minecraft:charcoal", 37], ["minecraft:coal_block", 333], ["minecraft:magma_block", 333], ["minecraft:lava_bucket", 1000]]
+	Icebox = [["minecraft:snowball", 37], ["minecraft:clay", 37], ["minecraft:snow_block", 333], ["minecraft:water_bucket", 333], ["minecraft:ice", 333], ["minecraft:packed_ice", 1000]]
+	#Negative values indicate cold fuel
+	Hearth = [["minecraft:coal", 37], ["minecraft:charcoal", 37], ["minecraft:coal_block", 333], ["minecraft:magma_block", 333], ["minecraft:lava_bucket", 1000], ["minecraft:snowball", -37], ["minecraft:clay", -37], ["minecraft:snow_block", -333], ["minecraft:water_bucket", -333], ["minecraft:ice", -333], ["minecraft:packed_ice", -1000]]
+
+["Soulspring Lamp"]
+	#Defines the items that the Soulspring Lamp can use as fuel and their values
+	#Format: ["item-id-1", "item-id-2", ...etc]
+	"Fuel Items" = ["minecraft:warped_stem", "minecraft:warped_hyphae", "minecraft:stripped_warped_stem", "minecraft:stripped_warped_hyphae", "minecraft:crimson_stem", "minecraft:crimson_hyphae", "minecraft:stripped_crimson_stem", "minecraft:stripped_crimson_hyphae"]
+	#Defines the dimensions that the Soulspring Lamp can be used in
+	#Format: ["dimension-id-1", "dimension-id-2", ...etc]
+	"Valid Dimensions" = ["minecraft:the_nether"]
+
+[Insulation]
+	#Defines the items that can be used for insulating armor in the Sewing Table
+	#Format: [["item-id-1", cold-1, hot-1], ["item-id-2", cold-2, hot-2], ...etc]
+	#"item-id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
+	#"cold": The amount of cold insulation the item provides.
+	#"hot": The amount of heat insulation the item provides.
+	"Insulation Ingredients" = [["minecraft:leather_helmet", 4, 4], ["minecraft:leather_chestplate", 6, 6], ["minecraft:leather_leggings", 5, 5], ["minecraft:leather_boots", 4, 4], ["minecraft:leather", 1, 1], ["cold_sweat:hoglin_hide", 0, 2], ["cold_sweat:goat_fur", 2, 0]]
+	#Defines the items that provide insulation when worn
+	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
+	"Insulated Armor" = [["minecraft:leather_helmet", 4, 4], ["minecraft:leather_chestplate", 6, 6], ["minecraft:leather_leggings", 5, 5], ["minecraft:leather_boots", 4, 4]]
+	#Defines how many insulation slots armor pieces have
+	"Insulation Slots" = [4, 6, 5, 4]
+
+[Consumables]
+	#Defines items that affect the player's temperature when consumed
+	#Format: [[item-id-1, amount-1], [item-id-2, amount-2], ...etc]
+	#Negative values are cold foods, positive values are hot foods
+	"Temperature-Affecting Foods" = [["farmersdelight:apple_cider", 10], ["farmersdelight:baked_cod_stew", 10], ["farmersdelight:beef_patty", 10], ["farmersdelight:beef_stew", 20], ["farmersdelight:bone_broth", 20], ["farmersdelight:cabbage_rolls", 10], ["farmersdelight:chicken_soup", 30], ["farmersdelight:cooked_bacon", 10], ["farmersdelight:cooked_chicken_cuts", 10], ["farmersdelight:cooked_cod_slice", 10], ["farmersdelight:cooked_mutton_chops", 10], ["farmersdelight:cooked_rice", 10], ["farmersdelight:cooked_salmon_slice", 10], ["farmersdelight:dumplings", 10], ["farmersdelight:fish_stew", 20], ["farmersdelight:fried_egg", 10], ["farmersdelight:fried_rice", 10], ["farmersdelight:glow_berry_custard", 10], ["farmersdelight:grilled_salmon", 10], ["farmersdelight:hamburger", 10], ["farmersdelight:honey_glazed_ham", 10], ["farmersdelight:hot_cocoa", 30], ["farmersdelight:melon_popsicle", -20], ["farmersdelight:mushroom_rice", 10], ["farmersdelight:nether_salad", 50], ["farmersdelight:noodle_soup", 30], ["farmersdelight:pasta_with_meatballs", 40], ["farmersdelight:pasta_with_mutton_chop", 40], ["farmersdelight:pumpkin_soup", 30], ["farmersdelight:ratatouille", 30], ["farmersdelight:roast_chicken", 40], ["farmersdelight:roasted_mutton_chops", 10], ["farmersdelight:shepherds_pie", 20], ["farmersdelight:smoked_ham", 10], ["farmersdelight:squid_ink_pasta", 20], ["farmersdelight:steak_and_potatoes", 20], ["farmersdelight:stuffed_pumpkin", 30], ["farmersdelight:vegetable_noodles", 30], ["farmersdelight:vegetable_soup", 30]]
+	#Defines the amount a player's body temperature will change by when using a waterskin
+	#Range: > 0
+	"Waterskin Strength" = 50
+
