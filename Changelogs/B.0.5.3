@@ -1,8 +1,32 @@
 Intermediate update to try and pinpoint the crash issues on Radeon GPU's
 
+Fixes
+
+Fixed the sound system crashing, trade off is no rain sounds ( most people turn them way down anyway).
+ 
+
+Additions
+
 Added Magnesium/Rubidium Extra's.
-Removed InventorySorter (sync issues with connecting clients, might also be an issue to cause the game to crash).
+ 
 
+Removed
+
+InventorySorter (sync issues with connecting clients, might also be an issue to cause the game to crash).
+ 
+
+Changes
+
+Worldgen makeover! In an effort to make the pack less performance intensive I have done many tweaks to worldgen! BACKUP YOUR WORLD BEFORE LOADING!
+Cities are smaller, further apart and more damaged.
+Skyscrapers are shorter.
+Doubled Overworld Ancient Debris generation, increased to chance to find exposed Ancient Debris.
+Tweaked Overworld Cobalt generation, smaller veins and found on lower y levels.
+Increased the spawn rates of Wither Skeletons in haunted buildings.
 Adjusted radius of hoppers used in atmospheric cleansers. 32 blocks is the new max range for the speedy hopper 3, then 16, 8, 4 and 2
+ 
 
-Sound breaking is fixed.
+Notes
+
+There is an issue with Radeon Graphics cards crashing to desktop, I have made a change to the flywheel client settings that MIGHT solve this.(Backend changed from INSTANCED to OFF)
+Once I know for sure what the issue is with AMD GPUs, I can continue with the main Beta Versions and work on B.0.6
